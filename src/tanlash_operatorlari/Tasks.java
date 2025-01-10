@@ -210,6 +210,57 @@ public class Tasks {
 
         }
 
-    }
+        //todo Sanani ifodalash
+    public void SananiIfodalash() {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print("Kunni kiriting: ");
+            int D = scanner.nextInt();
+            System.out.print("Oyni kiriting: ");
+            int M = scanner.nextInt();
+
+            int[] oylarKuni = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+            if (M < 1 || M > 12 || D < 1 || D > oylarKuni[M - 1]) {
+                System.out.println("Noto'g'ri sana kiritildi");
+                return;
+            }
+            int kunlarSoni = 0;
+            for (int i = 0; i < M - 1; i++) {
+                kunlarSoni += oylarKuni[i];
+            }
+            kunlarSoni += D;
+
+            System.out.println("Yil: 2025, Sanasi: " + M + "-oyning " +
+                    D + "-kuni. Umumiy kunlar: " + kunlarSoni);
+            scanner.close();
+        }
+
+        //todo kiritilgan sanadan key qancha kun qolganini aniqlaydi.
+        public void qolganSana() {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print("Kunni kiriting: ");
+            int D = scanner.nextInt();
+            System.out.print("Oyni kiriting: ");
+            int M = scanner.nextInt();
+
+            int[] oylarKuni = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+            if (M < 1 || M > 12 || D < 1 || D > oylarKuni[M - 1]) {
+                System.out.println("Noto'g'ri sana kiritildi");
+                return;
+            }
+            int kunlarsoni = 0;
+            for (int i = 0; i < M - 1 ; i++) {
+                kunlarsoni += oylarKuni[i];
+            }
+            kunlarsoni += D;
+            int qolgankunlar = 365 - kunlarsoni;
+            System.out.println("keyingi qolgan kunlar soni: " + qolgankunlar);
+            scanner.close();
+        }
+
+}
 
 

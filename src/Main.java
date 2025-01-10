@@ -2,11 +2,8 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 
 import tanlash_operatorlari.Tasks;
-
-import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-
 
                 Tasks opManager = new Tasks();
 
@@ -33,6 +30,12 @@ public class Main {
 
                 //todo og'irlik o'lchovlarini kg ga o'zgartirish:
 //        opManager.ogirlikMethod();
+
+                //todo Sanani ifodalash
+//        opManager.SananiIfodalash();
+
+                //todo kiritilgan sanadan key qancha kun qolganini aniqlaydi.
+//        opManager.qolganSana();
 
             }
         }
