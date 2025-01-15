@@ -10,9 +10,6 @@ public class Main {
                 //todo 4 ta fasildi oylari bilan chiqaradi:
 //        opManager.fasillar(3);
 
-                //todo sonlardi satirlarga aylantiradi:
-//        opManager.numberWords(46);
-
                 //todo hafta kunlarini chiqaradi:
 //        opManager.weekday(6);
 
@@ -36,6 +33,24 @@ public class Main {
 
                 //todo kiritilgan sanadan key qancha kun qolganini aniqlaydi.
 //        opManager.qolganSana();
+
+               //todo Tengtomonli uchburchak
+//        opManager.tengtomonliUchburchak();
+
+               //todo Karta turlarini chiqarib beradi.
+//        opManager.kartaNomlari();
+
+               //todo qancha masala qolganini aniqlaydi.
+//        opManager.masalaAniqlovchi();
+
+               //todo sonlardi satirlarga aylantiradi:
+//        opManager.numberWords(46);
+
+               //todo Burch aniqlash.
+//        opManager.burjAniqlash();
+
+               //todo Sharq kalendari.
+//        opManager.SharqKalendari();
 
             }
         }
